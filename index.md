@@ -72,3 +72,5 @@ We also created a renderer that will render how scene with WebGL. It takes two p
 2. Render height (set to the height of the winow)
 
 Then we add the render element (a <canvas> element) to our html document.
+
+3. Next we are going to create a basic box.
