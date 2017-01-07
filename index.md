@@ -18,7 +18,9 @@ Beyond the expected games and websites, Three.JS has been used for advertisments
 
 We are going to start with the Hello World of Three.JS programming, a rotating cube.
 
-1. Start by creating project directory and give it a name. I'm gonna use ThreeJS_HW. Inside of this directory create one file named index.html and another directory named js. Naviagate to [this github page](https://github.com/mrdoob/three.js/tree/dev/build) and download a Three.JS build.
+# Start by creating project directory and give it a name.
+
+I'm gonna use ThreeJS_HW. Inside of this directory create one file named index.html and another directory named js. Naviagate to [this github page](https://github.com/mrdoob/three.js/tree/dev/build) and download a Three.JS build.
 
 Set up a basic html page to use the downloaded three.js file. Also create an empty javscript tag fro our work.
 
@@ -44,19 +46,19 @@ It should look like this
 </html>
 ```
 
-2. Next we must create three important things, the scene, the camera, the renderer.
+# Next we must create three important things, the scene, the camera, the renderer.
 
    -The scene is thing we are adding everything else to.
    -The camera is how we view the scene.
    -The renderer creates the image for our camera to see.
 
 ```javascript
-	var scene = new THREE.Scene();
-	var camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 );
+var scene = new THREE.Scene();
+var camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 );
 
-	var renderer = new THREE.WebGLRenderer();
-	renderer.setSize( window.innerWidth, window.innerHeight );
-	document.body.appendChild( renderer.domElement );
+var renderer = new THREE.WebGLRenderer();
+renderer.setSize( window.innerWidth, window.innerHeight );
+document.body.appendChild( renderer.domElement );
 ```
 
 The type of camera we are using is a perspective camer that will reflect how we naturally see the world. It takes four parameters.
@@ -73,4 +75,4 @@ We also created a renderer that will render how scene with WebGL. It takes two p
 
 Then we add the render element (a `<canvas>` element) to our html document.
 
-3. Next we are going to create a cube.
+# Next we are going to create a cube.
