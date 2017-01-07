@@ -14,11 +14,11 @@ All sorts of stuff.
 
 Beyond the expected games and websites, Three.JS has been used for advertisments and music videos.
 
-### Lets Get Started!!
+## Lets Get Started!!
 
 We are going to start with the Hello World of Three.JS programming, a rotating cube.
 
-# Start by creating project directory and give it a name.
+### Start by creating project directory and give it a name.
 
 I'm gonna use ThreeJS_HW. Inside of this directory create one file named index.html and another directory named js. Naviagate to [this github page](https://github.com/mrdoob/three.js/tree/dev/build) and download a Three.JS build.
 
@@ -46,7 +46,7 @@ It should look like this
 </html>
 ```
 
-# Next we must create three important things, the scene, the camera, the renderer.
+### Next we must create three important things, the scene, the camera, the renderer.
 
    -The scene is thing we are adding everything else to.
    -The camera is how we view the scene.
@@ -75,4 +75,4 @@ We also created a renderer that will render how scene with WebGL. It takes two p
 
 Then we add the render element (a `<canvas>` element) to our html document.
 
-# Next we are going to create a cube.
+### Next we are going to create a cube.
