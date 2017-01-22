@@ -75,4 +75,24 @@ We also created a renderer that will render how scene with WebGL. It takes two p
 
 Then we add the render element (a `<canvas>` element) to our html document.
 
-### Next we are going to create a cube.
+### Now, lets create a cube.
+
+To create the cube we need two things. We must create both the geometry and material for the cube.
+
+```Javascript
+var geometry = new THREE.BoxGeometry(1, 1, 1);
+var material = new THREE.MeshBasicMaterial( { color: 0x00ff00 } );
+```
+
+Then we combine them together into the a mesh based object and add it to the scene.
+
+```Javascript
+var cube = new THREE.Mesh( geometry, material );
+scene.add( cube );
+```
+
+We can't see anything right now, so lets back up the camera a bit.
+
+```Javascript
+camera.position.z = 5;
+```
